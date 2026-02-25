@@ -1,0 +1,248 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(1200px 800px at 20% 0%, rgba(22, 119, 255, 0.18), rgba(11, 18, 32, 0)),
+    radial-gradient(900px 600px at 80% 10%, rgba(88, 101, 242, 0.18), rgba(11, 18, 32, 0)),
+    #0b1220;
+}
+
+img {
+  display: block;
+}
+
+.app-shell {
+  height: 100%;
+  background: transparent;
+}
+
+.app-sider {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(9, 14, 26, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.app-logo {
+  height: 56px;
+  margin: 16px;
+  background: linear-gradient(135deg, rgba(22, 119, 255, 0.22), rgba(255, 255, 255, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.app-sider-connection {
+  margin: 0 16px 16px;
+}
+
+.app-sider :where(.ant-layout-sider-children) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.app-sider :where(.ant-menu) {
+  background: transparent;
+  border-inline-end: none;
+}
+
+.app-sider :where(.ant-menu-item) {
+  border-radius: 10px;
+  margin: 4px 12px;
+  padding-left: 16px;
+}
+
+.app-sider :where(.ant-menu-item-selected) {
+  background: linear-gradient(90deg, rgba(22, 119, 255, 0.35), rgba(22, 119, 255, 0.05));
+}
+
+.connection-manager--sidebar :where(.ant-card-body) {
+  padding: 12px;
+}
+
+.connection-manager {
+  background: transparent;
+}
+
+.connection-manager :where(.ant-card-head) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.connection-manager :where(.ant-input-affix-wrapper) {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.app-header {
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(9, 14, 26, 0.65);
+  backdrop-filter: blur(10px);
+}
+
+.app-content {
+  margin: 20px;
+}
+
+.app-surface {
+  max-width: 1400px;
+  margin: 0 auto;
+  border-radius: 16px;
+  padding: 20px;
+  background: rgba(16, 22, 38, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.chassis-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.chassis-card :where(.ant-card-body) {
+  padding: 16px;
+}
+
+.chassis-card__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.chassis-card__hints {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 12px;
+}
+
+.chassis-card__content {
+  margin-top: 6px;
+}
+
+.chassis-controls {
+  width: 100%;
+}
+
+.chassis-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chassis-section__title {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.chassis-slider :where(.ant-slider) {
+  flex: 1;
+}
+
+.chassis-value {
+  width: 56px;
+  text-align: right;
+}
+
+.chassis-actions :where(.ant-btn) {
+  min-width: 72px;
+}
+
+.chassis-divider {
+  margin: 8px 0;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.chassis-metrics {
+  padding-top: 6px;
+}
+
+.chassis-joystick-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.video-card :where(.ant-card-body) {
+  padding: 8px;
+}
+
+:where(.ant-card) {
+  background: rgba(20, 28, 48, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+:where(.ant-card-head) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  min-height: 48px;
+}
+
+:where(.ant-card-head-title) {
+  font-weight: 600;
+}
+
+:where(.ant-tag) {
+  border-radius: 999px;
+  padding: 2px 10px;
+}
+
+@media (max-width: 992px) {
+  .app-content {
+    margin: 12px;
+  }
+
+  .app-surface {
+    padding: 14px;
+  }
+
+  .app-logo {
+    margin: 12px;
+  }
+
+  .app-sider-connection {
+    margin: 0 12px 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-header {
+    padding: 0 16px;
+  }
+
+  .app-surface {
+    padding: 12px;
+  }
+}
